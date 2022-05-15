@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #191d28;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+.wrapper{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.right-pane{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (min-width: 1300px) {
+    .wrapper-buttons{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    }
+    
+}
+.top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.top button{
+    padding: 10px 20px;
+    margin: 4px;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #343a40;
+    color: white;
+    border-color: transparent;
+}
+
+.top button:hover{
+    cursor: pointer;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem 3rem;
+}
+
+.card h2{
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #009292;
+}
+
+.card h3{
+    font-size: 24px;
+    font-weight: 400;
+    color: #818d94;
+}
+
+.card h1{
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: white;
+}
+
+.wrapper-middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.advertisement{
+    display: none;
+}
+
+/* clock */
+.base-timer {
+    color: white;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .base-timer__svg {
+    transform: scaleX(-1);
+  }
+  
+  .base-timer__circle {
+    fill: none;
+    stroke: none;
+  }
+  
+  .base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: grey;
+  }
+  
+  .base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+  }
+  
+  .base-timer__path-remaining.green {
+    color: rgb(65, 184, 131);
+  }
+  
+  .base-timer__path-remaining.orange {
+    color: orange;
+  }
+  
+  .base-timer__path-remaining.red {
+    color: red;
+  }
+  
+  .base-timer__label {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  td{
+      color: white;
+      font-size: 32px;
+  }
+
+  th{
+      color: grey;
+      font-size: 24px;
+  }

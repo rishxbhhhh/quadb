@@ -1,0 +1,23 @@
+{
+  "name": "hodlinfo-copy",
+  "version": "1.0.0",
+  "description": "for quadb nodejs internship",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "type": "module",
+  "author": "Rishabh Rajpurohit",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-ejs-layouts": "^2.5.1",
+    "hbs": "^4.2.0",
+    "node-fetch": "^3.2.4",
+    "nodemon": "^2.0.16",
+    "pg": "^8.7.3"
+  }
+}

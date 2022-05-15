@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <met.nameviewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="60">
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Hodlinfo-copy</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
+  </head>
+  <body>
+    <section>
+      <div class="wrapper">
+        <div class="top">
+          <img src="/img/icon.jpg" alt="logo" style="width: 280px" />
+          <div class="wrapper-buttons">
+            <button>INR▼</button>
+            <button>BTC▼</button>
+            <button>BUY BTC</button>
+          </div>
+          <div class="right-pane">
+            <div id="counter"></div>
+            <button
+              class="wrapper-buttons"
+              style="
+                background-color: #009292;
+                color: white;
+                font-weight: 300;
+              "
+            >
+              <img
+                src="/img/telegram.png"
+                alt="telegram-logo"
+                style="width: 15px;"
+              />
+                &nbsp;&nbsp;Connect Telegram
+            </button>
+            <img src="/img/slider.jpg" alt="toggle dark mode" width="80px"/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- first section -->
+    <section class="advertisement">
+      <center style="font-size: 24px; color: #818d94">
+        Best Price to Trade
+      </center>
+    </section>
+    <!--second section-->
+
+    <section class="advertisement">
+      <center>
+        <div class="wrapper-middle">
+          <div class="card">
+            <h2>0.07%</h2>
+            <h3>5 Mins</h3>
+          </div>
+          <div class="card">
+            <h2>0.21%</h2>
+            <h3>1 Hour</h3>
+          </div>
+          <div class="card middle">
+            <h1>₹ 24,55,648</h1>
+            <h3>Average BTC/INR net price including commission</h3>
+          </div>
+          <div class="card">
+            <h2>1.14%</h2>
+            <h3>1 Day</h3>
+          </div>
+          <div class="card">
+            <h2>2.8%</h2>
+            <h3>7 Days</h3>
+          </div>
+        </div>
+      </center>
+    </section>
+    <!--third section-->
+    <section class="advertisement">
+      <center>
+        <img src="/img/ad.jpg" alt="ad-banner" style="width: 80%;">
+      </center>
+    </section>
+    <!--fourth section-->
+
+    <section>
+      <center style="margin-top: 60px; margin-bottom: 20px;">
+        <table id="datatable" style="width: 80%; font-size: 32px; color: white; font-weight: bold; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            <tr>
+                <th style="color: grey; text-align: left;">#</th>
+                <th style="color: grey; text-align: left;">Platform</th>
+                <th style="color: grey; text-align: left;">Last Traded Price</th>
+                <th style="color: grey; text-align: left;">Buy/Sell Price</th>
+                <th style="color: grey; text-align: left;">Volume</th>
+                <th style="color: grey; text-align: left;">Base_Unit</th>
+            </th>
+            <tr>
+              <td>1</td>
+              <td>{{obj1.name}}</td>
+              <td>{{obj1.last}}</td>
+              <td>{{obj1.buy}}/{{obj1.sell}}</td>
+              <td>{{obj1.volume}}</td>
+              <td>{{obj1.base_unit}}</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>{{obj2.name}}</td>
+              <td>{{obj2.last}}</td>
+              <td>{{obj2.buy}}/{{obj2.sell}}</td>
+              <td>{{obj2.volume}}</td>
+              <td>{{obj2.base_unit}}</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>{{obj3.name}}</td>
+              <td>{{obj3.last}}</td>
+              <td>{{obj3.buy}}/{{obj3.sell}}</td>
+              <td>{{obj3.volume}}</td>
+              <td>{{obj3.base_unit}}</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>{{obj4.name}}</td>
+              <td>{{obj4.last}}</td>
+              <td>{{obj4.buy}}/{{obj4.sell}}</td>
+              <td>{{obj4.volume}}</td>
+              <td>{{obj4.base_unit}}</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>{{obj5.name}}</td>
+              <td>{{obj5.last}}</td>
+              <td>{{obj5.buy}}/{{obj5.sell}}</td>
+              <td>{{obj5.volume}}</td>
+              <td>{{obj5.base_unit}}</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>{{obj6.name}}</td>
+              <td>{{obj6.last}}</td>
+              <td>{{obj6.buy}}/{{obj6.sell}}</td>
+              <td>{{obj6.volume}}</td>
+              <td>{{obj6.base_unit}}</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>{{obj7.name}}</td>
+              <td>{{obj7.last}}</td>
+              <td>{{obj7.buy}}/{{obj7.sell}}</td>
+              <td>{{obj7.volume}}</td>
+              <td>{{obj7.base_unit}}</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>{{obj8.name}}</td>
+              <td>{{obj8.last}}</td>
+              <td>{{obj8.buy}}/{{obj8.sell}}</td>
+              <td>{{obj8.volume}}</td>
+              <td>{{obj8.base_unit}}</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>{{obj9.name}}</td>
+              <td>{{obj9.last}}</td>
+              <td>{{obj9.buy}}/{{obj9.sell}}</td>
+              <td>{{obj9.volume}}</td>
+              <td>{{obj9.base_unit}}</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>{{obj10.name}}</td>
+              <td>{{obj10.last}}</td>
+              <td>{{obj10.buy}}/{{obj10.sell}}</td>
+              <td>{{obj10.volume}}</td>
+              <td>{{obj10.base_unit}}</td>
+            </tr>
+        </table>
+      </center>
+    </section>
+    <!--fifth and 'main' section which updates its values every minute-->
+
+    <section class="advertisement">
+      <center>
+        <img src="/img/ad2.jpg" alt="ad-banner" style="width: 80%;"/>
+      </center>
+    </section>
+    <!--sixth section-->
+
+    <section style="width: 100%; height: 50px;margin-bottom: 0.5rem; color:aliceblue">
+        <hr color="#818d94" size="1px">
+        &nbsp;&nbsp;&nbsp;&nbsp;Copyright  &copy; 2019&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hodlinfo.com&nbsp;&nbsp;&nbsp;&nbsp;Developed by <span class="compa.namestyle="color: #009292; font-weight:bold;">QuadBTech</span>&nbsp;&nbsp;&nbsp;&nbsp;(Copy Made by Rishabh Rajpurohit | See my <a href="https://www.github.com/rishxbhhhh">GITHUB</a>)
+            
+    </section>
+    <script src="/js/app.js" defer></script>
+
+  </body>
+</html>
