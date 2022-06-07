@@ -104,7 +104,7 @@ async function driverFunction() {
 }
 
 //server code
-const port = 4444;
+const port = process.env.PORT;
 app.use(express.static("public"));
 app.use("/js", express.static(__dirname + "public/js"));
 app.use("/css", express.static(__dirname + "public/css"));
