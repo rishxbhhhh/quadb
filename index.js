@@ -13,21 +13,21 @@ import expressLayouts from "express-ejs-layouts";
 var finalIndex=undefined;
 var cryptoData=undefined;
 // postgres client connect
-const client = new Client({
-  user: "postgres",
-  host: "localhost",
-  password: "rishabh",
-  port: 5432,
-  database: "quadbtestdata",
-});
+// const client = new Client({
+//   user: "postgres",
+//   host: "localhost",
+//   password: "rishabh",
+//   port: 5432,
+//   database: "quadbtestdata",
+// });
 
-client.connect((err) => {
-  if (err) {
-    console.error("DB connection error", err.stack);
-  } else {
-    console.log("DB connected");
-  }
-});
+// client.connect((err) => {
+//   if (err) {
+//     console.error("DB connection error", err.stack);
+//   } else {
+//     console.log("DB connected");
+//   }
+// });
 
 const getJSON = async (url) => {
   const response = await fetch(url);
@@ -55,43 +55,44 @@ const getData = async () => {
 
 
 
-  let q0 = "DELETE FROM cryptodata";
-  client.query(q0, (err, res) => {
-    if (err) {
-      // console.log(err.message);
-    }
-    // console.log(res.rows);
-  });
+  // let q0 = "DELETE FROM cryptodata";
+  // client.query(q0, (err, res) => {
+  //   if (err) {
+  //     // console.log(err.message);
+  //   }
+  //   // console.log(res.rows);
+  // });
 
-  for (let i = 1; i < 11; i++) {
-    let q2 = `INSERT INTO cryptodata VALUES ($1,$2,$3,$4,$5,$6,$7)`;
-    client.query(
-      q2,
-      [
-        i,
-        data[index[i - 1]]["name"],
-        data[index[i - 1]]["last"],
-        data[index[i - 1]]["buy"],
-        data[index[i - 1]]["sell"],
-        data[index[i - 1]]["volume"],
-        data[index[i - 1]]["base_unit"],
-      ],
-      (err, res) => {
-        if (err) {
-          // console.log(err.message);
-        }
-      }
-    );
-  }
+//   for (let i = 1; i < 11; i++) {
+//     let q2 = `INSERT INTO cryptodata VALUES ($1,$2,$3,$4,$5,$6,$7)`;
+//     client.query(
+//       q2,
+//       [
+//         i,
+//         data[index[i - 1]]["name"],
+//         data[index[i - 1]]["last"],
+//         data[index[i - 1]]["buy"],
+//         data[index[i - 1]]["sell"],
+//         data[index[i - 1]]["volume"],
+//         data[index[i - 1]]["base_unit"],
+//       ],
+//       (err, res) => {
+//         if (err) {
+//           // console.log(err.message);
+//         }
+//       }
+//     );
+//   }
 
-  let q3 = "SELECT * from cryptodata";
-  client.query(q3, (err, res) => {
-    if (err) {
-      // console(err.message);
-    }
-    // console.log(res.rows);
-  });
-  return 1;
+//   let q3 = "SELECT * from cryptodata";
+//   client.query(q3, (err, res) => {
+//     if (err) {
+//       // console(err.message);
+//     }
+//     // console.log(res.rows);
+//   });
+//   return 1;
+// 
 }
 
 async function driverFunction() {
