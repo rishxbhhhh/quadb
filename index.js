@@ -21,6 +21,14 @@ const client = new Client({
   database: "quadbtestdata",
 });
 
+client.connect((err) => {
+  if (err) {
+    console.error("DB connection error", err.stack);
+  } else {
+    console.log("DB connected");
+  }
+});
+
 const getJSON = async (url) => {
   const response = await fetch(url);
   if (!response.ok) throw new Error(response.statusText);
@@ -45,13 +53,7 @@ const getData = async () => {
     cryptoData = data;
   }
 
-   client.connect((err) => {
-    if (err) {
-      console.error("DB connection error", err.stack);
-    } else {
-      console.log("DB connected");
-    }
-  });
+
 
   let q0 = "DELETE FROM cryptodata";
   client.query(q0, (err, res) => {
@@ -87,7 +89,7 @@ const getData = async () => {
     if (err) {
       // console(err.message);
     }
-    console.log(res.rows);
+    // console.log(res.rows);
   });
   return 1;
 }
@@ -95,9 +97,9 @@ const getData = async () => {
 async function driverFunction() {
   let isComplete = await getData();
   console.log("isComplete?: "+isComplete);
-  console.log("1: "+cryptoData);
-  console.log("2: "+finalIndex);
-  console.log("3: "+cryptoData[finalIndex[1]]);
+  // console.log("1: "+cryptoData);
+  // console.log("2: "+finalIndex);
+  // console.log("3: "+cryptoData[finalIndex[1]]);
 }
 
 //server code

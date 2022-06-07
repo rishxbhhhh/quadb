@@ -90,9 +90,9 @@ body{
     flex-direction: row;
 }
 
-.advertisement{
+/* .advertisement{
     display: none;
-}
+} */
 
 /* clock */
 .base-timer {
